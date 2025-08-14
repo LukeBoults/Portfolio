@@ -37,14 +37,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const activateMan = (text) => {
         if (!isMuted && !ufoActive) {
-            setMan("mantalking.gif");
+            setMan("Images/mantalking.gif");
             showBubble(text);
         }
     };
 
     const deactivateMan = () => {
         if (!isMuted && !ufoActive) {
-            setMan("maninactive.gif");
+            setMan("Images/maninactive.gif");
             hideBubble();
         }
     };
@@ -52,10 +52,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const restoreMan = () => {
         // Called after UFO ends
         if (isMuted) {
-            setMan("manmuted.gif");
+            setMan("Images/manmuted.gif");
             hideBubble();
         } else {
-            setMan("maninactive.gif");
+            setMan("Images/maninactive.gif");
             hideBubble();
         }
     };
@@ -63,11 +63,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const toggleMute = () => {
         isMuted = !isMuted;
         if (isMuted) {
-            setMan("manmuted.gif");
+            setMan("Images/manmuted.gif");
             hideBubble();
         } else {
             // Only show inactive if no UFO event is active
-            if (!ufoActive) setMan("maninactive.gif");
+            if (!ufoActive) setMan("Images/maninactive.gif");
         }
     };
 
@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ufo.style.opacity = '0';
             ufo.style.animation = 'none';
 
-            setMan('mansurprised.gif');
+            setMan('Images/mansurprised.gif');
             if (!isMuted) {
                 showBubble('Did you just see that?');
             }
