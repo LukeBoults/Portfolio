@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
         ".blog-btn": "Check out the blog!",
         ".project-btn": "Glory Awaits!",
         ".sample-list li": "Check out this piece of work!",
-        "h1": "That's my name, don't wear it out!",
-        "img": "What a handsome devil!"
+        ".my-name": "That's my name, don't wear it out!",
+        ".profile-pic": "What a handsome devil!"
     };
 
 
